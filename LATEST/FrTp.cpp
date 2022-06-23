@@ -131,7 +131,9 @@ FUNC(void, FRTP_CODE) module_FrTp::InitFunction(
 #endif
 }
 
-FUNC(void, FRTP_CODE) module_FrTp::DeInitFunction(void){
+FUNC(void, FRTP_CODE) module_FrTp::DeInitFunction(
+   void
+){
 #if(STD_ON == FrTp_InitCheck)
    if(
          E_OK
@@ -154,7 +156,9 @@ FUNC(void, FRTP_CODE) module_FrTp::DeInitFunction(void){
 #endif
 }
 
-FUNC(void, FRTP_CODE) module_FrTp::MainFunction(void){
+FUNC(void, FRTP_CODE) module_FrTp::MainFunction(
+   void
+){
 #if(STD_ON == FrTp_InitCheck)
    if(
          E_OK
@@ -176,7 +180,9 @@ FUNC(void, FRTP_CODE) module_FrTp::MainFunction(void){
 #endif
 }
 
-FUNC(void, FRTP_CODE) module_FrTp::dummy(void){
+FUNC(void, FRTP_CODE) module_FrTp::dummy(
+   void
+){
 }
 
 /******************************************************************************/
