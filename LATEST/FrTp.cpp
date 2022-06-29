@@ -41,13 +41,9 @@ class module_FrTp:
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-            Std_TypeReturn          IsInitDone{E_NOT_OK};
-      const CfgModule_TypeAbstract* lptrCfg{(CfgModule_TypeAbstract*)NULL_PTR};
             infPduRClient_Lo        infPduRClient_FrTp;
 
    public:
-      module_FrTp(Std_TypeVersionInfo lVersionInfo) : abstract_module(lVersionInfo){
-      }
       FUNC(void, FRTP_CODE) InitFunction(
          CONSTP2CONST(CfgModule_TypeAbstract, FRTP_CONFIG_DATA, FRTP_APPL_CONST) lptrCfgModule
       );
@@ -72,18 +68,7 @@ CONSTP2VAR(infSchMClient, FRTP_VAR, FRTP_CONST) gptrinfSchMClient_FrTp = &FrTp;
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-VAR(module_FrTp, FRTP_VAR) FrTp(
-   {
-         FRTP_AR_RELEASE_VERSION_MAJOR
-      ,  FRTP_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
-);
+VAR(module_FrTp, FRTP_VAR) FrTp;
 
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
