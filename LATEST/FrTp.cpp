@@ -7,9 +7,7 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "Module.hpp"
-#include "CfgFrTp.hpp"
-#include "FrTp_core.hpp"
-#include "infFrTp_Exp.hpp"
+#include "FrTp.hpp"
 #include "infFrTp_Imp.hpp"
 
 /******************************************************************************/
@@ -32,27 +30,6 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-class module_FrTp:
-      INTERFACES_EXPORTED_FRTP
-      public abstract_module
-   ,  public class_FrTp_Functionality
-{
-   private:
-/******************************************************************************/
-/* OBJECTS                                                                    */
-/******************************************************************************/
-            infPduRClient_Lo        infPduRClient_FrTp;
-
-   public:
-      FUNC(void, FRTP_CODE) InitFunction(
-         CONSTP2CONST(CfgModule_TypeAbstract, FRTP_CONFIG_DATA, FRTP_APPL_CONST) lptrCfgModule
-      );
-      FUNC(void, FRTP_CODE) DeInitFunction (void);
-      FUNC(void, FRTP_CODE) MainFunction   (void);
-      FRTP_CORE_FUNCTIONALITIES
-};
-
-extern VAR(module_FrTp, FRTP_VAR) FrTp;
 
 /******************************************************************************/
 /* CONSTS                                                                     */
