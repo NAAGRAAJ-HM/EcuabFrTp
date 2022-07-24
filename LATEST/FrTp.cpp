@@ -48,7 +48,8 @@ VAR(module_FrTp, FRTP_VAR) FrTp;
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
 FUNC(void, FRTP_CODE) module_FrTp::InitFunction(
-   CONSTP2CONST(CfgModule_TypeAbstract, FRTP_CONFIG_DATA, FRTP_APPL_CONST) lptrCfgModule
+      CONSTP2CONST(ConstModule_TypeAbstract, FRTP_CONST,       FRTP_APPL_CONST) lptrConstModule
+   ,  CONSTP2CONST(CfgModule_TypeAbstract,   FRTP_CONFIG_DATA, FRTP_APPL_CONST) lptrCfgModule
 ){
 #if(STD_ON == FrTp_InitCheck)
    if(
@@ -56,8 +57,12 @@ FUNC(void, FRTP_CODE) module_FrTp::InitFunction(
       != IsInitDone
    ){
 #endif
-      if(NULL_PTR != lptrCfgModule){
-         lptrCfg = lptrCfgModule;
+      if(
+            (NULL_PTR != lptrConstModule)
+         && (NULL_PTR != lptrCfgModule)
+      ){
+         lptrConst = lptrConstModule;
+         lptrCfg   = lptrCfgModule;
       }
       else{
 #if(STD_ON == FrTp_DevErrorDetect)

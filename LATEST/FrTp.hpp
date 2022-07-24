@@ -7,6 +7,7 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
+#include "ConstFrTp.hpp"
 #include "CfgFrTp.hpp"
 #include "FrTp_core.hpp"
 #include "infFrTp_Exp.hpp"
@@ -31,6 +32,7 @@ class module_FrTp:
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
+      const ConstFrTp_Type* lptrConst = (ConstFrTp_Type*)NULL_PTR;
       infPduRClient_Lo infPduRClient_FrTp;
 
    public:
@@ -38,7 +40,8 @@ class module_FrTp:
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
       FUNC(void, FRTP_CODE) InitFunction(
-         CONSTP2CONST(CfgModule_TypeAbstract, FRTP_CONFIG_DATA, FRTP_APPL_CONST) lptrCfgModule
+            CONSTP2CONST(ConstModule_TypeAbstract, FRTP_CONST,       FRTP_APPL_CONST) lptrConstModule
+         ,  CONSTP2CONST(CfgModule_TypeAbstract,   FRTP_CONFIG_DATA, FRTP_APPL_CONST) lptrCfgModule
       );
       FUNC(void, FRTP_CODE) DeInitFunction (void);
       FUNC(void, FRTP_CODE) MainFunction   (void);
