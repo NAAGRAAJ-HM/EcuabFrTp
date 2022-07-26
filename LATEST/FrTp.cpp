@@ -61,7 +61,7 @@ FUNC(void, FRTP_CODE) module_FrTp::InitFunction(
             (NULL_PTR != lptrConstModule)
          && (NULL_PTR != lptrCfgModule)
       ){
-         lptrConst = lptrConstModule;
+         lptrConst = (const ConstFrTp_Type*)lptrConstModule;
          lptrCfg   = lptrCfgModule;
       }
       else{
