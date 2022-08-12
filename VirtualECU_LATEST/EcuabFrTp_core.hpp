@@ -12,11 +12,11 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define FRTP_CORE_FUNCTIONALITIES                                              \
-              FUNC(void, FRTP_CODE) dummy                          (void);     \
+#define ECUABFRTP_CORE_FUNCTIONALITIES                                              \
+              FUNC(void, ECUABFRTP_CODE) dummy                          (void);     \
 
-#define FRTP_CORE_FUNCTIONALITIES_VIRTUAL                                      \
-      virtual FUNC(void, FRTP_CODE) dummy                          (void) = 0; \
+#define ECUABFRTP_CORE_FUNCTIONALITIES_VIRTUAL                                      \
+      virtual FUNC(void, ECUABFRTP_CODE) dummy                          (void) = 0; \
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -27,7 +27,7 @@
 /******************************************************************************/
 class class_EcuabFrTp_Functionality{
    public:
-      FRTP_CORE_FUNCTIONALITIES_VIRTUAL
+      ECUABFRTP_CORE_FUNCTIONALITIES_VIRTUAL
 };
 
 /******************************************************************************/

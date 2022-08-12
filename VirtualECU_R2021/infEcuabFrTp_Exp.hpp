@@ -1,22 +1,19 @@
 #pragma once
 /******************************************************************************/
-/* File   : EcuabFrTp_core.hpp                                                     */
+/* File   : infEcuabFrTp_Exp.hpp                                                   */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "CompilerCfg_EcuabFrTp.hpp"
+#include "infEcuabFrTp_ServiceDet.hpp"
+#include "infServicePduRClient_Lo.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define ECUABFRTP_CORE_FUNCTIONALITIES                                              \
-              FUNC(void, ECUABFRTP_CODE) dummy                          (void);     \
-
-#define ECUABFRTP_CORE_FUNCTIONALITIES_VIRTUAL                                      \
-      virtual FUNC(void, ECUABFRTP_CODE) dummy                          (void) = 0; \
+#define INTERFACES_EXPORTED_FRTP
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -25,10 +22,6 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-class class_EcuabFrTp_Functionality{
-   public:
-      ECUABFRTP_CORE_FUNCTIONALITIES_VIRTUAL
-};
 
 /******************************************************************************/
 /* CONSTS                                                                     */

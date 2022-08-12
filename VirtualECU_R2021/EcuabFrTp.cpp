@@ -13,18 +13,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define ECUABFRTP_AR_RELEASE_VERSION_MAJOR                                         4
-#define ECUABFRTP_AR_RELEASE_VERSION_MINOR                                         3
+#define FRTP_AR_RELEASE_VERSION_MAJOR                                         4
+#define FRTP_AR_RELEASE_VERSION_MINOR                                         3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(ECUABFRTP_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible ECUABFRTP_AR_RELEASE_VERSION_MAJOR!"
+#if(FRTP_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible FRTP_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(ECUABFRTP_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible ECUABFRTP_AR_RELEASE_VERSION_MINOR!"
+#if(FRTP_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible FRTP_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -42,14 +42,14 @@
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-VAR(module_EcuabFrTp, ECUABFRTP_VAR) EcuabFrTp;
+VAR(module_EcuabFrTp, FRTP_VAR) EcuabFrTp;
 
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
-FUNC(void, ECUABFRTP_CODE) module_EcuabFrTp::InitFunction(
-      CONSTP2CONST(ConstModule_TypeAbstract, ECUABFRTP_CONST,       ECUABFRTP_APPL_CONST) lptrConstModule
-   ,  CONSTP2CONST(CfgModule_TypeAbstract,   ECUABFRTP_CONFIG_DATA, ECUABFRTP_APPL_CONST) lptrCfgModule
+FUNC(void, FRTP_CODE) module_EcuabFrTp::InitFunction(
+      CONSTP2CONST(ConstModule_TypeAbstract, FRTP_CONST,       FRTP_APPL_CONST) lptrConstModule
+   ,  CONSTP2CONST(CfgModule_TypeAbstract,   FRTP_CONFIG_DATA, FRTP_APPL_CONST) lptrCfgModule
 ){
 #if(STD_ON == EcuabFrTp_InitCheck)
    if(
@@ -83,14 +83,14 @@ FUNC(void, ECUABFRTP_CODE) module_EcuabFrTp::InitFunction(
             0 //TBD: IdModule
          ,  0 //TBD: IdInstance
          ,  0 //TBD: IdApi
-         ,  ECUABFRTP_E_UNINIT
+         ,  FRTP_E_UNINIT
       );
 #endif
    }
 #endif
 }
 
-FUNC(void, ECUABFRTP_CODE) module_EcuabFrTp::DeInitFunction(
+FUNC(void, FRTP_CODE) module_EcuabFrTp::DeInitFunction(
    void
 ){
 #if(STD_ON == EcuabFrTp_InitCheck)
@@ -108,14 +108,14 @@ FUNC(void, ECUABFRTP_CODE) module_EcuabFrTp::DeInitFunction(
             0 //TBD: IdModule
          ,  0 //TBD: IdInstance
          ,  0 //TBD: IdApi
-         ,  ECUABFRTP_E_UNINIT
+         ,  FRTP_E_UNINIT
       );
 #endif
    }
 #endif
 }
 
-FUNC(void, ECUABFRTP_CODE) module_EcuabFrTp::MainFunction(
+FUNC(void, FRTP_CODE) module_EcuabFrTp::MainFunction(
    void
 ){
 #if(STD_ON == EcuabFrTp_InitCheck)
@@ -132,14 +132,14 @@ FUNC(void, ECUABFRTP_CODE) module_EcuabFrTp::MainFunction(
             0 //TBD: IdModule
          ,  0 //TBD: IdInstance
          ,  0 //TBD: IdApi
-         ,  ECUABFRTP_E_UNINIT
+         ,  FRTP_E_UNINIT
       );
 #endif
    }
 #endif
 }
 
-FUNC(void, ECUABFRTP_CODE) module_EcuabFrTp::dummy(
+FUNC(void, FRTP_CODE) module_EcuabFrTp::dummy(
    void
 ){
 }
