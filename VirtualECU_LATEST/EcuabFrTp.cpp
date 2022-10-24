@@ -1,5 +1,5 @@
 /******************************************************************************/
-/* File   : EcuabFrTp.cpp                                                          */
+/* File   : EcuabFrTp.cpp                                                     */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
@@ -13,8 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define ECUABFRTP_AR_RELEASE_VERSION_MAJOR                                         4
-#define ECUABFRTP_AR_RELEASE_VERSION_MINOR                                         3
+#define ECUABFRTP_AR_RELEASE_VERSION_MAJOR                                     4
+#define ECUABFRTP_AR_RELEASE_VERSION_MINOR                                     3
 
 /******************************************************************************/
 /* MACROS                                                                     */
