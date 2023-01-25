@@ -1,13 +1,13 @@
 #pragma once
 /******************************************************************************/
-/* File   : EcuabFrTp.hpp                                                          */
+/* File   : EcuabFrTp.hpp                                                     */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "ConstEcuabFrTp.hpp"
+#include "infEcuabFrTp_ServiceNvM_Types.hpp"
 #include "CfgEcuabFrTp.hpp"
 #include "EcuabFrTp_core.hpp"
 #include "infEcuabFrTp_Exp.hpp"
